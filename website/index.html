@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
+	<title>Website Title</title>
+</head>
+
+<body>
+	<h1>Header</h1>
+
+	<p>
+		My first paragraph.
+	</p>
+
+	<p id = #p01>
+		Different Color Paragraph
+	</p>
+
+  <a href="http://www.w3schools.com">This is a link</a>
+	<a href="html_images.asp" style="text-decoration:none">HTML Images</a>
+
+	<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+	<button type="button" name="button" onclick="change();">This is a Button</button>
+
+	<form action="action_page.php"> <!--Sends form to a php file for server to handle
+	firstname and lastname variables-->
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="">
+    <br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+  </form>
+
+	<script type="text/javascript">
+		function change(){
+			var world = document.getElementbyId("world");
+			world.innerHTML = "Changed the World";
+		}
+	</script>
+</body>
+
+</html>
