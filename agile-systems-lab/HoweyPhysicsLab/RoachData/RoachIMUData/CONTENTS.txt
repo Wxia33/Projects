@@ -1,0 +1,6 @@
+CsvFilePlotter.mat
+Contains matlab function to plot data using csv files
+
+controldata.csv
+csv file of green mpu9250 (with magnet glued to bottom) 
+measuring kinematic data while staying still for approximately 15.21 seconds

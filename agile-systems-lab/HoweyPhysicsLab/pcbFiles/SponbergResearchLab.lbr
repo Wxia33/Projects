@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.4.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="MPU9250">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0" layer="21"/>
+<smd name="NCS" x="-0.2" y="1.35" dx="0.2" dy="0.3" layer="1" stop="no"/>
+<smd name="AUX_DA" x="0.2" y="1.35" dx="0.2" dy="0.3" layer="1" stop="no"/>
+<smd name="RESV3" x="0.6" y="1.35" dx="0.2" dy="0.3" layer="1" stop="no"/>
+<smd name="RESV2" x="1" y="1.35" dx="0.2" dy="0.3" layer="1" stop="no"/>
+<smd name="SCL/SCLK" x="-0.6" y="1.35" dx="0.2" dy="0.3" layer="1" stop="no"/>
+<smd name="SDA/SDI" x="-1" y="1.35" dx="0.2" dy="0.3" layer="1" stop="no"/>
+<smd name="NC1" x="-1.35" y="0.2" dx="0.2" dy="0.3" layer="1" rot="R90" stop="no"/>
+<smd name="NC2" x="-1.35" y="-0.2" dx="0.2" dy="0.3" layer="1" rot="R90" stop="no"/>
+<smd name="NC3" x="-1.35" y="-0.6" dx="0.2" dy="0.3" layer="1" rot="R90" stop="no"/>
+<smd name="NC4" x="-1.35" y="-1" dx="0.2" dy="0.3" layer="1" rot="R90" stop="no"/>
+<smd name="NC" x="-1.35" y="0.6" dx="0.2" dy="0.3" layer="1" rot="R90" stop="no"/>
+<smd name="RESV" x="-1.35" y="1" dx="0.2" dy="0.3" layer="1" rot="R90" stop="no"/>
+<smd name="AUX_CL" x="-1" y="-1.35" dx="0.2" dy="0.3" layer="1" rot="R180" stop="no"/>
+<smd name="VDDIO" x="-0.6" y="-1.35" dx="0.2" dy="0.3" layer="1" rot="R180" stop="no"/>
+<smd name="AD0/SDO" x="-0.2" y="-1.35" dx="0.2" dy="0.3" layer="1" rot="R180" stop="no"/>
+<smd name="REGOUT" x="0.2" y="-1.35" dx="0.2" dy="0.3" layer="1" rot="R180" stop="no"/>
+<smd name="FSYNC" x="0.6" y="-1.35" dx="0.2" dy="0.3" layer="1" rot="R180" stop="no"/>
+<smd name="INT" x="1" y="-1.35" dx="0.2" dy="0.3" layer="1" rot="R180" stop="no"/>
+<smd name="VDD" x="1.35" y="-1" dx="0.2" dy="0.3" layer="1" rot="R270" stop="no"/>
+<smd name="NC5" x="1.35" y="-0.6" dx="0.2" dy="0.3" layer="1" rot="R270" stop="no"/>
+<smd name="NC6" x="1.35" y="-0.2" dx="0.2" dy="0.3" layer="1" rot="R270" stop="no"/>
+<smd name="NC7" x="1.35" y="0.2" dx="0.2" dy="0.3" layer="1" rot="R270" stop="no"/>
+<smd name="NC8" x="1.35" y="0.6" dx="0.2" dy="0.3" layer="1" rot="R270" stop="no"/>
+<smd name="GND" x="1.35" y="1" dx="0.2" dy="0.3" layer="1" rot="R270" stop="no"/>
+<rectangle x1="-1.55" y1="0.875" x2="-1.15" y2="1.125" layer="29"/>
+<rectangle x1="-1.125" y1="1.15" x2="-0.875" y2="1.55" layer="29"/>
+<rectangle x1="-1.55" y1="0.475" x2="-1.15" y2="0.725" layer="29"/>
+<rectangle x1="-1.55" y1="0.075" x2="-1.15" y2="0.325" layer="29"/>
+<rectangle x1="-1.55" y1="-0.325" x2="-1.15" y2="-0.075" layer="29"/>
+<rectangle x1="-1.55" y1="-0.725" x2="-1.15" y2="-0.475" layer="29"/>
+<rectangle x1="-1.55" y1="-1.125" x2="-1.15" y2="-0.875" layer="29"/>
+<rectangle x1="-1.125" y1="-1.55" x2="-0.875" y2="-1.15" layer="29"/>
+<rectangle x1="-0.725" y1="-1.55" x2="-0.475" y2="-1.15" layer="29"/>
+<rectangle x1="-0.325" y1="-1.55" x2="-0.075" y2="-1.15" layer="29"/>
+<rectangle x1="0.075" y1="-1.55" x2="0.325" y2="-1.15" layer="29"/>
+<rectangle x1="0.475" y1="-1.55" x2="0.725" y2="-1.15" layer="29"/>
+<rectangle x1="0.875" y1="-1.55" x2="1.125" y2="-1.15" layer="29"/>
+<rectangle x1="1.15" y1="-1.125" x2="1.55" y2="-0.875" layer="29"/>
+<rectangle x1="1.15" y1="-0.725" x2="1.55" y2="-0.475" layer="29"/>
+<rectangle x1="1.15" y1="-0.325" x2="1.55" y2="-0.075" layer="29"/>
+<rectangle x1="1.15" y1="0.075" x2="1.55" y2="0.325" layer="29"/>
+<rectangle x1="1.15" y1="0.475" x2="1.55" y2="0.725" layer="29"/>
+<rectangle x1="1.15" y1="0.875" x2="1.55" y2="1.125" layer="29"/>
+<rectangle x1="0.875" y1="1.15" x2="1.125" y2="1.55" layer="29"/>
+<rectangle x1="0.475" y1="1.15" x2="0.725" y2="1.55" layer="29"/>
+<rectangle x1="0.075" y1="1.15" x2="0.325" y2="1.55" layer="29"/>
+<rectangle x1="-0.325" y1="1.15" x2="-0.075" y2="1.55" layer="29"/>
+<rectangle x1="-0.725" y1="1.15" x2="-0.475" y2="1.55" layer="29"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MPU-9250">
+<pin name="VDD" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="NC14" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="NC15" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="NC16" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="NC17" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="GND" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="P$5" x="-20.32" y="12.7" length="middle"/>
+<pin name="NC2" x="-20.32" y="7.62" length="middle"/>
+<pin name="NC3" x="-20.32" y="2.54" length="middle"/>
+<pin name="NC4" x="-20.32" y="-2.54" length="middle"/>
+<pin name="NC5" x="-20.32" y="-7.62" length="middle"/>
+<pin name="NC6" x="-20.32" y="-12.7" length="middle"/>
+<pin name="AUX_CL" x="-12.7" y="-20.32" length="middle" rot="R90"/>
+<pin name="VDC" x="-7.62" y="-20.32" length="middle" rot="R90"/>
+<pin name="ADDRSDO" x="-2.54" y="-20.32" length="middle" rot="R90"/>
+<pin name="REGOUT" x="2.54" y="-20.32" length="middle" rot="R90"/>
+<pin name="FSYNIC" x="7.62" y="-20.32" length="middle" rot="R90"/>
+<pin name="INT" x="12.7" y="-20.32" length="middle" rot="R90"/>
+<pin name="SDA/SCI" x="-12.7" y="20.32" length="middle" rot="R270"/>
+<pin name="SCL/SCLK" x="-7.62" y="20.32" length="middle" rot="R270"/>
+<pin name="NCS" x="-2.54" y="20.32" length="middle" rot="R270"/>
+<pin name="AUX_DA" x="2.54" y="20.32" length="middle" rot="R270"/>
+<pin name="RESV20" x="7.62" y="20.32" length="middle" rot="R270"/>
+<pin name="RESV" x="12.7" y="20.32" length="middle" rot="R270"/>
+<wire x1="-15.24" y1="15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPU9250">
+<description>&lt;h1&gt;MPU Inertial Measurement Unit&lt;h1/&gt;
+&lt;h2&gt;Measures acceleration, angular velocity, and magnetometer information&lt;h2/&gt;</description>
+<gates>
+<gate name="G$1" symbol="MPU-9250" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MPU9250">
+<connects>
+<connect gate="G$1" pin="ADDRSDO" pad="AD0/SDO"/>
+<connect gate="G$1" pin="AUX_CL" pad="AUX_CL"/>
+<connect gate="G$1" pin="AUX_DA" pad="AUX_DA"/>
+<connect gate="G$1" pin="FSYNIC" pad="FSYNC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INT" pad="INT"/>
+<connect gate="G$1" pin="NC14" pad="NC5"/>
+<connect gate="G$1" pin="NC15" pad="NC6"/>
+<connect gate="G$1" pin="NC16" pad="NC7"/>
+<connect gate="G$1" pin="NC17" pad="NC8"/>
+<connect gate="G$1" pin="NC2" pad="NC"/>
+<connect gate="G$1" pin="NC3" pad="NC1"/>
+<connect gate="G$1" pin="NC4" pad="NC2"/>
+<connect gate="G$1" pin="NC5" pad="NC3"/>
+<connect gate="G$1" pin="NC6" pad="NC4"/>
+<connect gate="G$1" pin="NCS" pad="NCS"/>
+<connect gate="G$1" pin="P$5" pad="REGOUT"/>
+<connect gate="G$1" pin="REGOUT" pad="RESV"/>
+<connect gate="G$1" pin="RESV" pad="RESV2"/>
+<connect gate="G$1" pin="RESV20" pad="RESV3"/>
+<connect gate="G$1" pin="SCL/SCLK" pad="SCL/SCLK"/>
+<connect gate="G$1" pin="SDA/SCI" pad="SDA/SDI"/>
+<connect gate="G$1" pin="VDC" pad="VDD"/>
+<connect gate="G$1" pin="VDD" pad="VDDIO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
