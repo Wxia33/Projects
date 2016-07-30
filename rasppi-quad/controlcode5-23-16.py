@@ -18,6 +18,7 @@ Kp = 1
 Ki = 0
 Kd = .05
 sumError = 0
+lastError = 0
 dt = 0.05
 
 bus = smbus.SMBus(0) #initialize i2c bus
@@ -88,7 +89,7 @@ def arm(): #function to arm ESCs
     pwm.setPWM(1, 0, 200)
     pwm.setPWM(2, 0, 200)
     pwm.setPWM(3, 0, 200)
-    time.sleep(6)
+    time.sleep(15)
 
 arm()
 
